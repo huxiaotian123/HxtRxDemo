@@ -1,4 +1,7 @@
 # hxtRxDemo
 
 
-rx java ÁªÏµ¿â  Ô´ÓÚÅ×ÎïÏßhttps://github.com/rengwuxian/RxJavaSamples
+rx java ç»ƒä¹ åº“
+
+æ„Ÿè°¢ rengwuxian(https://github.com/rengwuxian)
+https://github.com/rengwuxian/RxJavaSamples
