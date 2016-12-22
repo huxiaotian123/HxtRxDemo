@@ -21,6 +21,7 @@ public abstract class BaseFragment extends Fragment {
                 .setTitle(getTitleRes())
                 .setView(getActivity().getLayoutInflater().inflate(getDialogRes(), null))
                 .show();
+        Log.e("hxt","点了我");
     }
 
 

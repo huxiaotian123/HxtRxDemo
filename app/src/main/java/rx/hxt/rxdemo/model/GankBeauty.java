@@ -5,6 +5,6 @@ package rx.hxt.rxdemo.model;
  */
 
 public class GankBeauty {
-    public String createAt;
+    public String createdAt;
     public String url;
 }

@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import rx.hxt.rxdemo.module.elementary1.ElementaryFragment;
+import rx.hxt.rxdemo.module.map2.MapFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         return new ElementaryFragment();
                     case 1:
-                        return new ElementaryFragment();
+                        return new MapFragment();
                     case 2:
                         return new ElementaryFragment();
                     case 3:
