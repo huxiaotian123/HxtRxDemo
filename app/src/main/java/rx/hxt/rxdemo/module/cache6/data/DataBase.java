@@ -31,7 +31,7 @@ public class DataBase {
     private DataBase(){}
 
     public static DataBase getINSTANCE(){
-        if(null != INSTANCE){
+        if(null == INSTANCE){
             INSTANCE = new DataBase();
         }
         return  INSTANCE;
