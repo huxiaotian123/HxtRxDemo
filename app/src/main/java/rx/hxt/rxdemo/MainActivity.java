@@ -10,10 +10,11 @@ import android.support.v7.widget.Toolbar;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import rx.hxt.rxdemo.module.cache6.CacheFragment;
 import rx.hxt.rxdemo.module.elementary1.ElementaryFragment;
 import rx.hxt.rxdemo.module.map2.MapFragment;
 import rx.hxt.rxdemo.module.token4.TokenFragment;
-import rx.hxt.rxdemo.module.token_advanced4.TokenAdcancedFragment;
+import rx.hxt.rxdemo.module.token_advanced5.TokenAdcancedFragment;
 import rx.hxt.rxdemo.module.zip3.ZipFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     case 4:
                         return new TokenAdcancedFragment();
                     case 5:
-                        return new ElementaryFragment();
+                        return new CacheFragment();
                     default:
                         return new ElementaryFragment();
                 }
