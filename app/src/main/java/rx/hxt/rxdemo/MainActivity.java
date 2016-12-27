@@ -7,10 +7,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import rx.hxt.rxdemo.module.cache6.CacheFragment;
+import rx.Observable;
+import rx.functions.Action1;
 import rx.hxt.rxdemo.module.elementary1.ElementaryFragment;
 import rx.hxt.rxdemo.module.map2.MapFragment;
 import rx.hxt.rxdemo.module.token4.TokenFragment;
@@ -82,5 +85,18 @@ public class MainActivity extends AppCompatActivity {
         });
 
         tabLayout.setupWithViewPager(viewPager);
+
+
+        Observable.just("123","456")
+                .subscribe(new Action1<String>() {
+                    @Override
+                    public void call(String s) {
+                        Log.e("hxt",s);
+                    }
+                });
+
+                //.subscribe(s->log>e());
+        Observable.just("123","456")
+                .subscribe(s-> Log.e("hxt",s));
     }
 }
