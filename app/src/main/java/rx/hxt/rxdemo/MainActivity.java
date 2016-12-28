@@ -87,15 +87,6 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout.setupWithViewPager(viewPager);
 
-
-        Observable.just("123","456")
-                .subscribe(new Action1<String>() {
-                    @Override
-                    public void call(String s) {
-                        Log.e("hxt",s);
-                    }
-                });
-
                 //.subscribe(s->log>e());
         Observable.just("123","456")
                 .subscribe(s-> Log.e("hxt",s));
